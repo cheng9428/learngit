@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/bottom_stroke"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注    册"
+            android:textColor="#FF6666"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/RegisterReturn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="@string/register_return"
+            android:textSize="30sp"
+            android:background="#00000000"
+            android:textColor="#FF6666"
+            />
+    </RelativeLayout>
+
+    <!-- 信息输入框 -->
+    <LinearLayout
+        style="@style/register_linearLayout">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="#00000000"
+            android:src="@drawable/register_uesr_name" />
+
+        <EditText
+            android:id="@+id/registerUserPhone"
+            style="@style/register_user_info_text"
+            android:hint="请输入手机号" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/all_stroke">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:src="@drawable/register_message" />
+
+            <EditText
+                android:id="@+id/registerMessage"
+                style="@style/register_user_info_text"
+                android:layout_width="150dp"
+                android:maxLength="6"
+                android:hint="请输入验证码"/>
+         </LinearLayout>
+
+        <Button
+            android:id="@+id/RegisterSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_send_message"
+            android:layout_alignParentRight="true"
+            android:textColor="#FF6666"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/register_linearLayout">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="#00000000"
+            android:src="@drawable/register_uesr_name" />
+
+            <EditText
+                android:id="@+id/registerUserName"
+                style="@style/register_user_info_text"
+                android:hint="用户名" />
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/all_stroke"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/register_linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:src="@drawable/register_password" />
+
+            <EditText
+                android:id="@+id/registerPassword"
+                style="@style/register_user_info_text"
+                android:layout_width="250dp"
+                android:layout_alignEnd="@+id/register_linearLayout2"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/register_linearLayout2"
+                android:hint="6到16个字符组成的密码"
+                android:maxLength="16"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/RegisterSeeOrNoSee"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/register_toggle_button"
+            android:textOff=""
+            android:textOn="" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/ResgisterButton"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="注册"
+            android:textSize="12dp"
+            android:background="@drawable/pink_oval_button"
+            android:textColor="@android:color/white"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

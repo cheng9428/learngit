@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <!-- mainActivity界面见mainActivity.jpg -->
+
+    <!--  -->
+    <RelativeLayout
+        android:id="@+id/FirstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:background="#666666">
+
+        <!-- 用户名字 -->
+        <TextView
+            android:id="@+id/MainUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/main_user_name"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+
+        <!-- 地理位置 -->
+        <TextView
+            android:id="@+id/MainAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MainUserName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/main_address"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp" />
+
+        <!-- IMG -->
+        <ImageButton
+            android:id="@+id/MainIMG"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@id/MainAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFF1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SecondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/FirstLayout"
+        android:layout_marginTop="5dp">
+
+        <!-- 切换手环号 -->
+        <Button
+            android:id="@+id/MainChangeRight"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/main_change_activity"
+            android:textSize="20sp"
+            android:background="#00000000"
+            android:textColor="#FF6666"
+            />
+
+        <!-- 切换手环号 -->
+        <Button
+            android:id="@+id/MainChangeLeft"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignBottom="@id/MainChangeRight"
+            android:layout_toLeftOf="@id/MainChangeRight"
+             android:gravity="left"
+            android:text="@string/main_change"
+            android:textSize="20sp"
+            android:background="#00000000"
+            android:textColor="#FF6666"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ThirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/SecondLayout"
+        android:layout_marginTop="20dp">
+
+        <!-- 健康状况 -->
+        <ImageButton
+            android:id="@+id/MainHealthLeft"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/health"
+            android:background="#FFFFFF"
+            />
+
+        <!-- 健康状况 -->
+        <Button
+            android:id="@+id/MainHealthRight"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignBottom="@id/MainHealthLeft"
+            android:layout_toRightOf="@id/MainHealthLeft"
+            android:gravity="left"
+            android:text="@string/main_health"
+            android:textSize="20sp"
+            android:background="#00000000"
+            android:textColor="#666666"
+            />
+
+        <!-- 定位 -->
+        <ImageButton
+            android:id="@+id/MainGPSLeft"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/MainHealthLeft"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gps"
+            android:background="#FFFFFF"
+            />
+
+        <!-- 定位 -->
+        <Button
+            android:id="@+id/MainGPSRight"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_toRightOf="@id/MainGPSLeft"
+            android:layout_alignBottom="@id/MainGPSLeft"
+            android:layout_marginBottom="5dp"
+            android:gravity="left"
+            android:text="@string/main_gps"
+            android:textSize="20sp"
+            android:background="#00000000"
+            android:textColor="#666666"
+            />
+
+        <!-- 情绪检测 -->
+        <ImageButton
+            android:id="@+id/MainEmotionLeft"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/MainGPSLeft"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/emotion"
+            android:background="#FFFFFF"
+            />
+
+        <!-- 情绪检测 -->
+        <Button
+            android:id="@+id/MainEmotionRight"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/MainEmotionLeft"
+            android:layout_alignBottom="@id/MainEmotionLeft"
+            android:layout_marginBottom="5dp"
+            android:gravity="left"
+            android:text="@string/main_emotion"
+            android:textSize="20sp"
+            android:background="#00000000"
+            android:textColor="#666666"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/FourthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:layout_below="@id/ThirdLayout"
+        android:layout_marginTop="20dp">
+
+        <!-- 上门服务 -->
+        <Button
+            android:id="@+id/LoginLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="天气服务"
+            android:textSize="12dp"
+            android:background="@drawable/pink_oval_button"
+            android:textColor="@android:color/white"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

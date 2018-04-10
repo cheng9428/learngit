@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="register_linearLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/all_stroke</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+    
+    <style name="register_user_info_text_view">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:textColor">#339900</item>
+    </style>
+
+    <style name="register_user_info_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+</resources>
